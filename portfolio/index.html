@@ -36,7 +36,7 @@
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
                         <i class="fa-solid fa-briefcase"></i>
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
                         <i class="fa-solid fa-file-lines"></i>
@@ -65,19 +65,20 @@
     <!-- header end-->
 
     <!-- about -->
-    <div class="container-fluid mt-3" id="about">
+    <div class="container-fluid mt-2" id="about">
         <div class="row">
             <div class="text-light bg-gradient text-center pt-3 pb-3 col-md-6 mb-2" id="about1">
                 <p>Hello, I am</p>
                 <h1>Aung Htet Naing</h1>
                 <p>
-                    I am currently changing my profession from a&nbsp;mechanical&nbsp;engineer to a&nbsp;web&nbsp;developer.
+                    I am currently changing my profession from a&nbsp;mechanical&nbsp;engineer to
+                    a&nbsp;web&nbsp;developer.
                 </p>
                 <a class="btn btn-danger" href="./pdf/AHN-CV.pdf" title="Download my CV" target="_blank">
                     Download CV
                 </a>
             </div>
-    
+
             <div class="col-md-6 mb-2">
                 <img src="./images/myPicture.jpg" class="img-thumbnail" alt="MyPicture">
             </div>
@@ -85,9 +86,136 @@
     </div>
     <!--about end-->
 
+    <!-- experience -->
+    <div class="container-fluid mt-2 mb-2" id="experience">
+        <h1 class="mb-0">Experience</h1>
+        <div class="card mb-2">
+            <div class="card-body text-white">
+                <h5>Mechanical Engineer [ Mar 2020 to Present ]</h5>
+                <h6>BANDO Manufacturing (Thailand) Ltd. Yangon Branch</h6>
+                <p>
+                    <ul>
+                        <li>
+                            Installed conveyor belts and hoses at the customer’s
+                            factories after taking inquiry from their engineers.
+                        </li>
+                        <li>
+                            Conducted aftersales follow-up services every one month
+                            and six months after products were purchased.
+                        </li>
+                        <li>
+                            Gave services of joining and installation of belts and hoses
+                            at the workshop of Yangon branch.
+                        </li>
+                        <li>
+                            Collaborated marketing with sale team from Nagase
+                            (Thailand) Co., Ltd to understand and provide customer requirements.
+                            &nbsp;<a href="#seeMore-exp1" id="see-exp1" class="card-link">See more</a>
+                        </li>
+                        <div id="seeMore-exp1">
+                            <li>
+                                Created and ran the Facebook Page, BANDO Myanmar, with the other colleagues.
+                            </li>
+                            <li>
+                                Practiced and applied KYT (Kiken Yochi Training, Predict Potential Hazards at Workplaces).
+                            </li>
+                            <li>
+                                Translated 3 catalogue books into Myanmar language.
+                                &nbsp;<a href="#seeMore-exp1" id="hide-exp1" class="card-link">See less</a>
+                            </li>
+                        </div>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-2">
+            <div class="card-body text-white">
+                <h5>Industrial Engineer [ Feb 2019 to July 2019 ]</h5>
+                <h6>Hungkiu (Myanmar) Garment MFG Co. Ltd</h6>
+                <p>
+                    <ul>
+                        <li>
+                            Participated in efficiency project leaded by Efficiency Developer, H & M.
+                        </li>
+                        <li>
+                            Instructed Industrial Engineering trainings to the lineleaders and supervisors.
+                        </li>
+                        <li>
+                            Created SMV data bank for better pre-line balancing and removing time study.
+                        </li>
+                        <li>
+                            Created a culture of recording loss time in sewing lines.
+                            &nbsp;<a href="#seeMore-exp2" id="see-exp2" class="card-link">See more</a>
+                        </li>
+                        <div id="seeMore-exp2">
+                            <li>
+                                Tracked the data daily, put in daily efficiency tracker and
+                                calculated the efficiencies of sewing lines daily.
+                            </li>
+                            <li>
+                                Made time study for new styles and calculated standard minute value (SMV).
+                            </li>
+                            <li>
+                                Used method studies in sewing lines, changed new sewing
+                                methods and removed non-value added activities.
+                            </li>
+                            <li>
+                                Set hourly target output for each operator using capacity study.
+                            </li>
+                            <li>
+                                Increased the pilot line efficiency from 42 % to 49 %.
+                            </li>
+                            <li>
+                                Assigned 2 subordinates daily tasks and trained them to
+                                have the knowledge of time study.
+                                &nbsp;<a href="#seeMore-exp2" id="hide-exp2" class="card-link">See less</a>
+                            </li>
+                        </div>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body text-white">
+                <h5>Internship [ Dec 2018 to Jan 2019 ]</h5>
+                <h6>H & M Puls Trading Far East Limited (Myanmar Branch Office)</h6>
+                <p>
+                    <ul>
+                        <li>
+                            Learned industrial engineering two weeks theoretically at
+                            the office and practically six weeks in Hungkiu garment factory.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script src="./vendors/bootstrap.bundle.min.js"></script>
     <script src="./vendors/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#see-exp1').click(() => {
+                $('#seeMore-exp1').css('display', 'block');
+                $('#see-exp1').css('display', 'none');
+            });
+            $('#hide-exp1').click(() => {
+                $('#seeMore-exp1').css('display', 'none');
+                $('#see-exp1').css('display', 'inline-block');
+            });
+
+            $('#see-exp2').click(() => {
+                $('#seeMore-exp2').css('display', 'block');
+                $('#see-exp2').css('display', 'none');
+            });
+            $('#hide-exp2').click(() => {
+                $('#seeMore-exp2').css('display', 'none');
+                $('#see-exp2').css('display', 'inline-block');
+            });
+        });
+    </script>
 </body>
 
 </html>

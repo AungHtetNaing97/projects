@@ -3,6 +3,7 @@
     --white: #fff;
     --black1: #222;
     --lightgray: #DCDCDC;
+    --gray: #808080;
 }
 
 * {
@@ -12,6 +13,8 @@
 body {
     background-color: var(--black);
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
 }
 
 .container-fluid { /* change width of container-fluid*/
@@ -41,7 +44,6 @@ body {
     padding: 0;
     margin: 0 2px 0 2px;
     color: var(--white) !important;
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     transition-duration: 1s;
 }
@@ -74,16 +76,13 @@ body {
         background-color: var(--black);
     }
     25% {
-        background-color: #00008b;
+        background-color: var(--white);
     }
     50% {
-        background-color: #808080;
-    }
-    75% {
-        background-color: #000080;
+        background-color: var(--lightgray);
     }
     100% {
-        background-color: #696969;
+        background-color: var(--black);
     }
 }
 /* end */
@@ -112,15 +111,16 @@ body {
 
 /* end of navbar -----------------------------------*/
 
+/* about */
 .btn-danger:hover { /* add hover effect to button */
     box-shadow: 0px 4px 4px #bb2d3b;
 }
 
-#about > div {
+#about > div { /* about content */
     align-items: center;
 }
 
-#about1 {
+#about1 { /* about content */
     max-height: 275px;
 }
 
@@ -130,4 +130,26 @@ body {
     border: 1px solid var(--black);
     background-color: var(--black1);
     max-width: 60%;
+}
+/* end of about */
+
+/* experience */
+h5, h6 {
+    text-align: center;
+}
+
+.card { /* carb bg color */
+    background-color: var(--black1);
+}
+
+.card-body { /* remove padding bottom */
+    padding-bottom: 0;
+}
+
+#experience a { /* link color */
+    color: var(--gray);
+}
+
+#seeMore-exp1, #seeMore-exp2 { /* jquery for link */
+    display: none;
 }
