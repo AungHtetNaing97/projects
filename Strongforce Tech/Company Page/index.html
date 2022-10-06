@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./vendors/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.3em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .navbar {
+            background-color: #f4511e;
+            z-index: 9999;
+            font-size: 12px !important;
+            line-height: 1.4 !important;
+            letter-spacing: 4px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar .navbar-brand,
+        .navbar li a {
+            color: #fff !important;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: #f4511e !important;
+            background-color: #fff;
+        }
+
+        #header {
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        #header form {
+            width: 400px;
+            margin: auto;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+            display: block;
+            width: 240px;
+            margin: auto;
+        }
+
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        #myCarousel {
+            padding: 75px 0 25px;
+        }
+
+        #myCarousel .carousel-control-prev i,
+        #myCarousel .carousel-control-next i {
+            color: #f4511e;
+            font-size: 35px;
+        }
+
+        #myCarousel .carousel-indicators button {
+            border: 1px solid #f4511e;
+            height: 5px;
+        }
+
+        #myCarousel .carousel-indicators button.active {
+            background-color: #f4511e;
+        }
+
+        #myCarousel .carousel-inner {
+            margin-bottom: 40px;
+        }
+
+        .panel {
+            border: 1px solid #f4511e;
+            transition: box-shadow 1s;
+        }
+
+        .panel:hover {
+            box-shadow: 5px 0 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .panel .panel-header {
+            color: #fff;
+            background-color: #f4511e;
+            padding: 25px 0;
+            margin-bottom: 5px;
+        }
+
+        .panel .panel-footer h3 {
+            font-size: 32px;
+        }
+
+        .panel .panel-footer h4 {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .panel .panel-footer .btn {
+            margin-bottom: 10px;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        
+        .panel .panel-footer .btn:hover {
+            background-color: #fff;
+            color: #f4511e;
+            border: 1px solid #f4511e;
+        }
+
+        #contact .btn {
+            background-color: #f4511e;
+            color: #fff;
+        }
+        
+        #contact .btn:hover {
+            background-color: #fff;
+            color: #f4511e;
+            border: 1px solid #f4511e;
+        }
+
+        #footer i {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+
+        #footer p a {
+            text-decoration: none;
+        }
+
+        .navbar-toggler i {
+            font-size: 25px;
+            color: rgb(249, 212, 212);
+        }
+
+        @media screen and (max-width: 992px) {
+            .navbar .nav-item a {
+                text-align: center;
+            }
+            .navbar .navbar-nav {
+                margin-top: 10px;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin: 0px auto;
+                margin-bottom: 35px;
+            }
+
+            .panel .panel-footer {
+                padding: 0px 10px;
+            }
+
+            .logo {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header form {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body id="myPage">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about" id="about-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" id="services-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" id="portfolio-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing" id="pricing-link">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="contact-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <div id="header" class="text-center">
+        <h1>Company</h1>
+        <p>We specialize in bla bla bla</p>
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email Address">
+                <button class="btn btn-danger">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <!-- end header -->
+
+    <!-- about -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>About Company Page</h2><br>
+
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea
+                    commodo consequat.</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo
+                    consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id
+                    est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                <br><button class="btn btn-danger btn-lg">Get in Touch</button>
+            </div>
+            <div class="col-sm-4">
+                <i class="fas fa-signal logo"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <i class="fas fa-globe logo"></i>
+            </div>
+            <div class="col-sm-8">
+                <h2>Our Values</h2><br>
+
+                <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodoconsequat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- service -->
+    <div id="services" class="container-fluid text-center">
+        <h2>Services</h2>
+        <h4>What we offer</h4>
+        <br>
+        <div class="row mb-5">
+            <div class="col-sm-4">
+                <i class="fas fa-power-off logo-small"></i>
+                <h4>POWER</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-heart logo-small"></i>
+                <h4>HEART</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-lock logo-small"></i>
+                <h4>JOB DONE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-sm-4">
+                <i class="fas fa-leaf logo-small"></i>
+                <h4>GREEN</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-certificate logo-small"></i>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-wrench logo-small"></i>
+                <h4>HARD WORK</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+    <!-- end service -->
+
+    <!-- portfolio -->
+    <div id="portfolio" class="container-fluid bg-grey text-center">
+        <h2>PORTFOLIO</h2>
+        <h4>What we have created</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-3">
+                    <img src="./images/paris.jpg" alt="paris">
+                    <p><strong>Paris</strong></p>
+                    <p>We built Paris.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="mb-3">
+                    <img src="./images/newyork.jpg" alt="new-york">
+                    <p><strong>New York</strong></p>
+                    <p>We built New York.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="mb-3">
+                    <img src="./images/sanfran.jpg" alt="sanfran">
+                    <p><strong>San Francisco</strong></p>
+                    <p>We built San Francisco.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <h2>What our customers say</h2>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h4><i>"Could I... BE any more happy with this company?"</i><br>
+                        Chandler Bing, Actor, FriendsAlot</h4>
+                </div>
+                <div class="carousel-item">
+                    <h4><i>"This company is the best. I am so happy with the result!"</i><br>
+                        Michael Roe, Vice President, Comment Box</h4>
+                </div>
+                <div class="carousel-item">
+                    <h4><i>"One word... WOW!!"</i><br>
+                        John Doe, Salesman, Rep Inc</h4>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <i class="fas fa-arrow-circle-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <i class="fas fa-arrow-circle-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end portfolio -->
+
+    <!-- pricing -->
+    <div id="pricing" class="container-fluid text-center">
+        <h2>pricing</h2>
+        <h4>Choose a payment plan that works for you</h4>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 mb-3">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>20</strong> Lorem</p>
+                        <p><strong>15</strong> Ipsum</p>
+                        <p><strong>5</strong> Dolor</p>
+                        <p><strong>2</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$19</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 mb-3">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>20</strong> Lorem</p>
+                        <p><strong>15</strong> Ipsum</p>
+                        <p><strong>5</strong> Dolor</p>
+                        <p><strong>2</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$29</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>20</strong> Lorem</p>
+                        <p><strong>15</strong> Ipsum</p>
+                        <p><strong>5</strong> Dolor</p>
+                        <p><strong>2</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$39</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end pricing -->
+
+    <!-- contact -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">contact</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp;Chicago, US</p>
+                <p><i class="fas fa-phone"></i> &nbsp;+00 1515151515</p>
+                <p><i class="fas fa-envelope"></i> &nbsp;myemail@something.com</p>
+            </div>
+
+            <div class="col-sm-7">
+                <div class="row mb-3">
+                    <div class="col-sm-6 mb-3">
+                        <input type="text" class="form-control" placeholder="name">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" placeholder="email">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <textarea class="form-control" rows="5" placeholder="comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-lg">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- location map -->
+    <img src="./images/map.jpg" alt="map" width="100%">
+
+    <!-- footer -->
+    <div id="footer" class="container-fluid text-center">
+        <a href="#myPage" title="go to top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+        <p><strong>Developed By &nbsp;</strong><a href="https://www.google.com" target="_blank">STRONGFORCE TECHNOLOGY</a></p>
+        <p>&copy; 2022</p>
+    </div>
+    <!-- end footer -->
+    <script src="./vendors/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // $('#about-link').click(() => {
+            //     $(".nav-link").removeClass('active');
+            //     $('#about-link').addClass('active');
+            // });
+
+            // $('#services-link').click(() => {
+            //     $(".nav-link").removeClass('active');
+            //     $('#services-link').addClass('active');
+            // });
+
+            // $('#portfolio-link').click(() => {
+            //     $(".nav-link").removeClass('active');
+            //     $('#portfolo-link').addClass('active');
+            // });
+
+            // $('#pricing-link').click(() => {
+            //     $(".nav-link").removeClass('active');
+            //     $('#pricing-link').addClass('active');
+            // });
+
+            // $('#contact-link').click(() => {
+            //     $(".nav-link").removeClass('active');
+            //     $('#contact-link').addClass('active');
+            // });
+            // id pyn phyote
+            $('.navbar .nav-link').click((e) => {
+                $('.navbar .nav-link').removeClass('active');
+                let navLink = $(e.currentTarget);
+                navLink.addClass('active');
+                
+                // if ($('.navbar .navbar-collapse').hasClass('show')) {
+                //     $('.navbar .navbar-collapse').removeClass('show');
+                // }
+
+                $('.navbar .navbar-collapse').removeClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
