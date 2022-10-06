@@ -18,9 +18,9 @@
 
 </head>
 
-<body>
+<body id="navi-bar">
     <!-- header -->
-    <nav class="navbar navbar-expand-lg text-light pb-0">
+    <nav class="navbar navbar-expand-lg text-light pb-0 sticky-top">
         <div class="container-fluid">
             <h1 class="navbar-brand animate-neonLight">Portfolio</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -31,32 +31,39 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-regular fa-id-card"></i>
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link active" href="#navi-bar">
+                            <i class="fa-regular fa-id-card d-block"></i>About
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link" href="#experience">
+                            <i class="fa-solid fa-briefcase d-block"></i>Experience
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-solid fa-file-lines"></i>
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">
+                            <i class="fa-solid fa-file-lines d-block"></i>Projects
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-md-1 mt-md-1">
-                        <i class="fa-solid fa-user-check"></i>
-                        <a class="nav-link" href="#">Certificates</a>
+                        <a class="nav-link" href="#certificates">
+                            <i class="fa-solid fa-user-check d-block"></i>Certificates
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-solid fa-star"></i>
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">
+                            <i class="fa-solid fa-star d-block"></i>Skills
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">
+                            <i class="fa-solid fa-graduation-cap d-block"></i>Education
+                        </a>
                     </div>
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">
+                            <i class="fa-solid fa-mobile-screen-button d-block"></i>Contact
+                        </a>
                     </div>
                 </div>
             </div>
@@ -80,51 +87,51 @@
             </div>
 
             <div class="col-md-6 mb-2">
-                <img src="./images/myPicture.jpg" class="img-thumbnail" alt="MyPicture">
+                <img src="./images/my-pic.jpg" class="img-thumbnail" alt="MyPicture">
             </div>
         </div>
     </div>
     <!--about end-->
 
     <!-- experience -->
-    <div class="container-fluid mt-2 mb-2" id="experience">
+    <div class="container-fluid mt-4 mb-2" id="experience">
         <h1 class="mb-0">Experience</h1>
         <div class="card mb-2">
             <div class="card-body text-white">
                 <h5>Mechanical Engineer [ Mar 2020 to Present ]</h5>
                 <h6>BANDO Manufacturing (Thailand) Ltd. Yangon Branch</h6>
                 <p>
-                    <ul>
+                <ul>
+                    <li>
+                        Installed conveyor belts and hoses at the customer’s
+                        factories after taking inquiry from their engineers.
+                    </li>
+                    <li>
+                        Conducted aftersales follow-up services every one month
+                        and six months after products were purchased.
+                    </li>
+                    <li>
+                        Gave services of joining and installation of belts and hoses
+                        at the workshop of Yangon branch.
+                    </li>
+                    <li>
+                        Collaborated marketing with sale team from Nagase
+                        (Thailand) Co., Ltd to understand and provide customer requirements.
+                        &nbsp;<a href="#seeMore-exp1" id="see-exp1" class="card-link">See more</a>
+                    </li>
+                    <div id="seeMore-exp1">
                         <li>
-                            Installed conveyor belts and hoses at the customer’s
-                            factories after taking inquiry from their engineers.
+                            Created and ran the Facebook Page, BANDO Myanmar, with the other colleagues.
                         </li>
                         <li>
-                            Conducted aftersales follow-up services every one month
-                            and six months after products were purchased.
+                            Practiced and applied KYT (Kiken Yochi Training, Predict Potential Hazards at Workplaces).
                         </li>
                         <li>
-                            Gave services of joining and installation of belts and hoses
-                            at the workshop of Yangon branch.
+                            Translated 3 catalogue books into Myanmar language.
+                            &nbsp;<a href="#seeMore-exp1" id="hide-exp1" class="card-link">See less</a>
                         </li>
-                        <li>
-                            Collaborated marketing with sale team from Nagase
-                            (Thailand) Co., Ltd to understand and provide customer requirements.
-                            &nbsp;<a href="#seeMore-exp1" id="see-exp1" class="card-link">See more</a>
-                        </li>
-                        <div id="seeMore-exp1">
-                            <li>
-                                Created and ran the Facebook Page, BANDO Myanmar, with the other colleagues.
-                            </li>
-                            <li>
-                                Practiced and applied KYT (Kiken Yochi Training, Predict Potential Hazards at Workplaces).
-                            </li>
-                            <li>
-                                Translated 3 catalogue books into Myanmar language.
-                                &nbsp;<a href="#seeMore-exp1" id="hide-exp1" class="card-link">See less</a>
-                            </li>
-                        </div>
-                    </ul>
+                    </div>
+                </ul>
                 </p>
             </div>
         </div>
@@ -134,45 +141,45 @@
                 <h5>Industrial Engineer [ Feb 2019 to July 2019 ]</h5>
                 <h6>Hungkiu (Myanmar) Garment MFG Co. Ltd</h6>
                 <p>
-                    <ul>
+                <ul>
+                    <li>
+                        Participated in efficiency project leaded by Efficiency Developer, H & M.
+                    </li>
+                    <li>
+                        Instructed Industrial Engineering trainings to the lineleaders and supervisors.
+                    </li>
+                    <li>
+                        Created SMV data bank for better pre-line balancing and removing time study.
+                    </li>
+                    <li>
+                        Created a culture of recording loss time in sewing lines.
+                        &nbsp;<a href="#seeMore-exp2" id="see-exp2" class="card-link">See more</a>
+                    </li>
+                    <div id="seeMore-exp2">
                         <li>
-                            Participated in efficiency project leaded by Efficiency Developer, H & M.
+                            Tracked the data daily, put in daily efficiency tracker and
+                            calculated the efficiencies of sewing lines daily.
                         </li>
                         <li>
-                            Instructed Industrial Engineering trainings to the lineleaders and supervisors.
+                            Made time study for new styles and calculated standard minute value (SMV).
                         </li>
                         <li>
-                            Created SMV data bank for better pre-line balancing and removing time study.
+                            Used method studies in sewing lines, changed new sewing
+                            methods and removed non-value added activities.
                         </li>
                         <li>
-                            Created a culture of recording loss time in sewing lines.
-                            &nbsp;<a href="#seeMore-exp2" id="see-exp2" class="card-link">See more</a>
+                            Set hourly target output for each operator using capacity study.
                         </li>
-                        <div id="seeMore-exp2">
-                            <li>
-                                Tracked the data daily, put in daily efficiency tracker and
-                                calculated the efficiencies of sewing lines daily.
-                            </li>
-                            <li>
-                                Made time study for new styles and calculated standard minute value (SMV).
-                            </li>
-                            <li>
-                                Used method studies in sewing lines, changed new sewing
-                                methods and removed non-value added activities.
-                            </li>
-                            <li>
-                                Set hourly target output for each operator using capacity study.
-                            </li>
-                            <li>
-                                Increased the pilot line efficiency from 42 % to 49 %.
-                            </li>
-                            <li>
-                                Assigned 2 subordinates daily tasks and trained them to
-                                have the knowledge of time study.
-                                &nbsp;<a href="#seeMore-exp2" id="hide-exp2" class="card-link">See less</a>
-                            </li>
-                        </div>
-                    </ul>
+                        <li>
+                            Increased the pilot line efficiency from 42 % to 49 %.
+                        </li>
+                        <li>
+                            Assigned 2 subordinates daily tasks and trained them to
+                            have the knowledge of time study.
+                            &nbsp;<a href="#seeMore-exp2" id="hide-exp2" class="card-link">See less</a>
+                        </li>
+                    </div>
+                </ul>
                 </p>
             </div>
         </div>
@@ -182,13 +189,161 @@
                 <h5>Internship [ Dec 2018 to Jan 2019 ]</h5>
                 <h6>H & M Puls Trading Far East Limited (Myanmar Branch Office)</h6>
                 <p>
-                    <ul>
-                        <li>
-                            Learned industrial engineering two weeks theoretically at
-                            the office and practically six weeks in Hungkiu garment factory.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        Learned industrial engineering two weeks theoretically at
+                        the office and practically six weeks in Hungkiu garment factory.
+                    </li>
+                </ul>
                 </p>
+            </div>
+        </div>
+    </div>
+    <!--experience end-->
+
+    <!--projects-->
+    <div class="container-fluid mt-4 mb-2" id="projects">
+        <h1 class="mb-0">Projects</h1>
+        <div class="row">
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="https://aunghtetnaing97.github.io/projects/Strongforce%20Tech/Company%20Page/index.html" 
+                    title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <img src="./images/company-page.JPG" class="img-thumbnail mt-1" alt="CompanyPage">
+                <a class="btn btn-danger mt-1 mb-1 d-block" href="" title="Go to Project" target="_blank">
+                    Company Page
+                </a>
             </div>
         </div>
     </div>
@@ -197,23 +352,42 @@
     <script src="./vendors/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(() => {
-            $('#see-exp1').click(() => {
+            /* navbar */
+            $('a.nav-link').click(() => { /* fixed display after clicking link at navbar */
+                $('nav').css('display', 'none');
+            });
+            $(window).scroll(() => { /* fixed display after clicking link at navbar */
+                $('nav').css('display', 'flex');
+            });
+
+            $('a.nav-link').click((e) => { /* switch active class after clicking and 
+                removing show to automatically hide navbar dropdown */
+                $('a.nav-link').removeClass('active');
+                let navLink = $(e.currentTarget);
+                navLink.addClass('active');
+                $('.navbar .navbar-collapse').removeClass('show');
+            });
+            /* end navbar */
+
+            /* experience */
+            $('#see-exp1').click(() => { /* see more */
                 $('#seeMore-exp1').css('display', 'block');
                 $('#see-exp1').css('display', 'none');
             });
-            $('#hide-exp1').click(() => {
+            $('#hide-exp1').click(() => { /* see less */
                 $('#seeMore-exp1').css('display', 'none');
                 $('#see-exp1').css('display', 'inline-block');
             });
 
-            $('#see-exp2').click(() => {
+            $('#see-exp2').click(() => { /* see more */
                 $('#seeMore-exp2').css('display', 'block');
                 $('#see-exp2').css('display', 'none');
             });
-            $('#hide-exp2').click(() => {
+            $('#hide-exp2').click(() => { /* see less */
                 $('#seeMore-exp2').css('display', 'none');
                 $('#see-exp2').css('display', 'inline-block');
             });
+            /* end experience */
         });
     </script>
 </body>
