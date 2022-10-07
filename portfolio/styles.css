@@ -17,29 +17,37 @@ body {
     line-height: 2;
 }
 
-.container-fluid { /* change width of container-fluid*/
+.container-fluid {
+    /* change width of container-fluid*/
     width: 95%;
 }
 
-.navbar { /* bg color nav */
+.navbar {
+    /* bg color nav */
     background-color: var(--black1);
 }
 
-.navbar-brand { /* logo */
-    font-family: 'Silkscreen', cursive;
+.navbar-brand {
+    /* logo */
+    font-family: 'Permanent Marker', cursive;
     text-shadow: 0 0 2px #ff0000, 0 0 4px #ffff00, 0 0 10px #2be634;
     font-size: 1.5rem;
-    background-color: var(--black);
-    padding: 10px;
-    box-shadow: 2px 2px 5px var(--lightgray);
-    border-radius: 10px;
+    /* background-color: var(--black); */
+    padding: 10px 15px 10px 15px;
+    /* box-shadow: 2px 2px 5px var(--lightgray); */
+    /* border-radius: 10px; */
+    border-radius: 79px;
+    background-color: #766f6f;
+    box-shadow: inset 31px 31px 24px #514d4d;
 }
 
-.navbar-collapse { /* navbar content at right */
+.navbar-collapse {
+    /* navbar content at right */
     justify-content: flex-end;
 }
 
-.nav-link { /* change style of navbar content */
+.nav-link {
+    /* change style of navbar content */
     font-size: 1.25rem;
     padding: 0;
     margin: 0 2px 0 2px;
@@ -48,7 +56,8 @@ body {
     transition-duration: 1s;
 }
 
-a.nav-link.active { /* active navbar */
+a.nav-link.active {
+    /* active navbar */
     background-color: var(--lightgray);
     box-shadow: 2px 2px 2px var(--black), 2px 2px 4px var(--white);
     border-radius: 5px;
@@ -56,18 +65,22 @@ a.nav-link.active { /* active navbar */
     padding-top: 2px;
 }
 
-.icon-link { /* group and center icon+test */
+.icon-link {
+    /* group and center icon+test */
     text-align: center;
     padding-top: 5px;
 }
 
-@media screen and (max-width: 991px) { /* fix error at navbar last content */
+@media screen and (max-width: 991px) {
+
+    /* fix error at navbar last content */
     .navbar-nav div:last-of-type {
         margin-bottom: 0 !important;
     }
 }
 
-.icon-link i { /* change navbar icon style */
+.icon-link i {
+    /* change navbar icon style */
     font-size: 1.5rem;
     margin-bottom: 1px;
 }
@@ -78,37 +91,52 @@ a.nav-link.active { /* active navbar */
     animation-name: neonLight;
     animation-iteration-count: infinite;
 }
+
 @keyframes neonLight {
     0% {
-        background-color: var(--black);
+        background-color: #766f6f;
     }
+
     25% {
-        background-color: var(--white);
+        background-color: darkblue;
     }
+
     50% {
-        background-color: var(--lightgray);
+        background-color: darkslategray;
     }
+
+    75% {
+        background-color: darkred;
+    }
+
     100% {
-        background-color: var(--black);
+        background-color: darkmagenta;
     }
 }
+
 /* end */
 
 /* hover group */
-.animate__animated.animate__pulse:hover { /* animation add to icon */
+.animate__animated.animate__pulse:hover {
+    /* animation add to icon */
     animation-duration: 1s;
     animation-iteration-count: infinite;
     background-color: var(--lightgray);
     box-shadow: 2px 2px 2px var(--black), 2px 2px 4px var(--white);
     border-radius: 5px;
 }
-.icon-link:hover i, .icon-link:hover a { /* icon+test */
+
+.icon-link:hover i,
+.icon-link:hover a {
+    /* icon+test */
     color: var(--black) !important;
     transition-duration: 1s;
 }
+
 /* end */
 
-.fas.fa-bars { /* navbar menu icon */
+.fas.fa-bars {
+    /* navbar menu icon */
     font-size: larger;
     color: var(--white);
     border: 2px solid #d4d2d2;
@@ -119,19 +147,31 @@ a.nav-link.active { /* active navbar */
 /* end of navbar -----------------------------------*/
 
 /* about */
-.btn.btn-danger:hover { /* add hover effect to all link buttons */
-    box-shadow: 2px 2px 4px var(--lightgray);
+a[title="Download my CV"] {
+    /*fixed error */
+    padding-bottom: 4px;
 }
 
-#about > div { /* about content */
+.btn.btn-danger:hover {
+    /* add hover effect to all link buttons */
+    border-radius: 79px;
+background: #ff0000;
+box-shadow: inset 31px 31px 24px #b00000,
+            inset -31px -31px 24px #ff0000;
+}
+
+#about>div {
+    /* about content */
     align-items: center;
 }
 
-#about1 { /* about content */
+#about1 {
+    /* about content */
     max-height: 275px;
 }
 
-#about .img-thumbnail { /* positioning img */
+#about .img-thumbnail {
+    /* positioning img */
     display: block;
     margin: auto;
     border: 1px solid var(--black);
@@ -139,53 +179,68 @@ a.nav-link.active { /* active navbar */
     max-width: 60%;
 }
 
-div#about { /* box about */
+div#about {
+    /* box about */
     box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
 }
+
 /* end of about */
 
 /* experience */
-h5, h6 {
+h5,
+h6 {
     text-align: center;
 }
 
-.card { /* carb bg color */
+.card {
+    /* carb bg color */
     background-color: var(--black1);
 }
 
-.card-body { /* remove padding bottom */
+.card-body {
+    /* remove padding bottom */
     padding-bottom: 0;
 }
 
-#experience a { /* link color */
+#experience a {
+    /* link color */
     color: var(--gray);
 }
 
-#seeMore-exp1, #seeMore-exp2 { /* jquery for link */
+#seeMore-exp1,
+#seeMore-exp2 {
+    /* jquery for link */
     display: none;
 }
 
-div#experience { /* box experience */
+div#experience {
+    /* box experience */
     box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
 }
+
 /* end of experience */
 
 /* projects */
-#projects .img-thumbnail { /* change bg style of img */
+#projects .img-thumbnail {
+    /* change bg style of img */
     background-color: var(--black1);
 }
 
-#projects .flex-item { /* group img and project name link */
+#projects .flex-item {
+    /* group img and project name link */
     box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
     width: 40%;
     margin-bottom: 30px;
 }
 
-#projects .row { /* space between projects */
+#projects .row {
+    /* space between projects */
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 767px) { /* display projects for different size */
+@media screen and (max-width: 767px) {
+
+    /* display projects for different size */
     #projects .flex-item {
         width: 80%;
         margin: auto;
