@@ -322,16 +322,24 @@ div#education {
 /* end education */
 
 /* contact */
-#contact .animate__animated.animate__pulse:hover i {
-    /* animation add to icon */
-    
-}
 #contact .animate__animated.animate__pulse:hover {
     /* animation add to icon */
     padding: 10px;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    background: var(--gray);
-box-shadow: inset 31px 31px 24px #61b7bd;
+    background: var(--lightgray);
+    box-shadow: 2px 2px 2px var(--black), 2px 2px 4px var(--white);
     border-radius: 5px;
+    color: var(--black) !important;
 }
+
+#contact .animate__animated.animate__pulse:hover .fa-brands {
+    /* fb and linkedin color*/
+    color: #1c1caf;
+}
+
+div#contact {
+    /* box contact */
+    box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
+}
+/* end contact */
