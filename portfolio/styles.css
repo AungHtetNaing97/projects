@@ -40,6 +40,9 @@ body {
     background-color: #766f6f;
     box-shadow: inset 25px 25px 50px #514d4d;
 }
+.navbar-brand a{ /* to make logo clickable */
+    color: white;
+}
 
 .navbar-collapse {
     /* navbar content at right */

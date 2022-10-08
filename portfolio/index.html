@@ -22,7 +22,10 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg text-light pb-0 sticky-top">
         <div class="container-fluid">
-            <h1 class="navbar-brand animate-neonLight">Portfolio</h1>
+            <h1 class="navbar-brand animate-neonLight" id="portfolio">
+                <a href="#navi-bar" class="text-decoration-none">Portfolio</a>
+            </h1>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -31,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <div class="icon-link animate__animated animate__pulse mb-1 mt-1">
-                        <a class="nav-link active" href="#navi-bar">
+                        <a class="nav-link active" href="#navi-bar" id="error">
                             <i class="fa-regular fa-id-card d-block"></i>About
                         </a>
                     </div>
@@ -476,6 +479,12 @@
                 $('#see-exp2').css('display', 'inline-block');
             });
             /* end experience */
+
+            /* fixed active */
+            $('#portfolio').click(() => {
+                $('a.nav-link').removeClass('active');
+                $('#error').addClass('active');
+            });
         });
     </script>
 </body>
