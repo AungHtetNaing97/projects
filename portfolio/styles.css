@@ -38,7 +38,7 @@ body {
     /* border-radius: 10px; */
     border-radius: 79px;
     background-color: #766f6f;
-    box-shadow: inset 31px 31px 24px #514d4d;
+    box-shadow: inset 25px 25px 50px #514d4d;
 }
 
 .navbar-collapse {
@@ -248,3 +248,75 @@ div#experience {
     }
 }
 /* end projects */
+
+/* certificates */
+#certificates .img-thumbnail {
+    /* change bg style of img */
+    background-color: var(--black1);
+}
+
+#certificates .flex-item {
+    /* group img and certificate name link */
+    box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+#certificates .row {
+    /* space between certificates */
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* display certificates for different size */
+    #certificates .flex-item {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+/* end certificates */
+
+/* skills */
+div#skills {
+    /* box skills */
+    box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
+}
+
+#skills div.progress-bar-striped { /*bg color for progress bar */
+    background: #61b7bd;
+}
+/* end skills */
+
+/* education */
+
+#education h6 a { /* style link */
+    text-decoration: none;
+}
+#education h6 a:hover {
+    text-decoration: underline;
+}
+
+#education .img-thumbnail {
+    /* positioning img */
+    display: block;
+    margin: auto;
+    border: 1px solid var(--black);
+    background-color: var(--black1);
+    max-width: 60%;
+}
+
+#edu { /* to align photo and text */
+    max-height: 200px;
+}
+
+#education>div {
+    /* about content */
+    align-items: center;
+}
+
+div#education {
+    /* box education */
+    box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
+}
