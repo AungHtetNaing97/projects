@@ -117,7 +117,7 @@ a.nav-link.active {
 /* end */
 
 /* hover group */
-.animate__animated.animate__pulse:hover {
+.navbar-nav .animate__animated.animate__pulse:hover {
     /* animation add to icon */
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -290,7 +290,6 @@ div#skills {
 /* end skills */
 
 /* education */
-
 #education h6 a { /* style link */
     text-decoration: none;
 }
@@ -319,4 +318,20 @@ div#skills {
 div#education {
     /* box education */
     box-shadow: 0px 0px 2px var(--black1), 2px 2px 0 var(--black1);
+}
+/* end education */
+
+/* contact */
+#contact .animate__animated.animate__pulse:hover i {
+    /* animation add to icon */
+    
+}
+#contact .animate__animated.animate__pulse:hover {
+    /* animation add to icon */
+    padding: 10px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: var(--gray);
+box-shadow: inset 31px 31px 24px #61b7bd;
+    border-radius: 5px;
 }
