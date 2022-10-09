@@ -250,6 +250,13 @@ div#experience {
         margin-bottom: 30px;
     }
 }
+
+#seeMoreProjects { /* See and hide projects */
+    display: none;
+}
+#hideProjects { /* See and hide projects */
+    display: none;
+}
 /* end projects */
 
 /* certificates */
