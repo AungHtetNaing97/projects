@@ -150,6 +150,10 @@ a.nav-link.active {
 /* end of navbar -----------------------------------*/
 
 /* about */
+#about .auto-type { /* change color of auto-typing */
+    color: #ff0000;
+}
+
 a[title="Download my CV"] {
     /*fixed error */
     padding-bottom: 4px;

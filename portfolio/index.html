@@ -79,11 +79,10 @@
     <div class="container-fluid mt-2" id="about">
         <div class="row">
             <div class="text-light bg-gradient text-center pt-3 pb-3 col-md-6 mb-2" id="about1">
-                <p>Hello, I am</p>
-                <h1>Aung Htet Naing</h1>
+                <h1>Hello, I am <span class="auto-type"></span></h1>
+                
                 <p>
-                    I am currently changing my profession from a&nbsp;mechanical&nbsp;engineer to
-                    a&nbsp;web&nbsp;developer.
+                    I am currently changing my profession <span class="auto-type2"></span>
                 </p>
                 <a class="btn btn-danger" href="./pdf/AHN-CV.pdf" title="Download my CV" target="_blank">
                     Download CV
@@ -480,6 +479,24 @@
         <h6>Update Monthly</h6>
     </div>
     <!-- end footer -->
+
+    <!-- auto typing -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Aung Htet Naing"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+        var typed2 = new Typed(".auto-type2", {
+            strings: ["from&nbsp;a&nbsp;mechanical&nbsp;engineer", "to&nbsp;a&nbsp;web&nbsp;developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+    <!-- auto typing end -->
     <script src="./vendors/bootstrap.bundle.min.js"></script>
     <script src="./vendors/jquery-3.6.0.min.js"></script>
     <script>
